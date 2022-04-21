@@ -3,10 +3,10 @@ import pyperclip
 
 def bulleter_function(lines: list) -> str:
     """
-    This functiontakes in a list of lines andd
+    This functiontakes in a list of lines and
     capitalizes the first character of each line
     adds * to the beginning at the beginning of the same line
-    Also adds a space between the lines for readability
+    Also adds a space in between the lines for readability
 
     Args:
         line (string): This is the string that represents a line of the document
@@ -24,7 +24,7 @@ def bulleter_function(lines: list) -> str:
 def exporter_clipboarder(txt_file: str, file_name: str) -> None:
     """
     Creates a file with the name  `file_name`
-    Writes a some text file into the created file.
+    Writes some text file into the created file.
     Copies the contents of the file onto a clipboard.
     
     Args:
@@ -33,7 +33,7 @@ def exporter_clipboarder(txt_file: str, file_name: str) -> None:
     """
     with open(f'{file_name}.txt', 'w') as file_name:
         print(txt_file, file=file_name)
-    # pyperclip.copy(file_name)
+    pyperclip.copy(file_name)
 
 
 # Test Case
