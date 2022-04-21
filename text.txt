@@ -1,6 +1,11 @@
-In summary, there are only a few data in the li- terature related
-to the claustrum of the human brain.
-Additionally, computer-aided 3D reconstructions of the claustra and measurements 
-regarding the di- mensions of these structures have not been report- ed previously.
-In this study, a feasible, reliable, and valid method for 3D reconstruction from any serial sections or images was presented using a real hu- man cadaver. This technique gives significant unre- ported information about the dimensions and 3D relationship of the claustrum and surrounding struc- tures.
-Therefore, this study will be a very useful an- atomical guide for neuroscientists and neurosur- geons interested in the claustrum.
+it has been suggested that the function of the claustrum (CL) may be to orchestrate and integrate
+the activity of the different cortical areas that are involved in a particular function by boosting
+the synchronized oscillations that occur between these areas. We propose here a model of how this
+may be done, thanks to the unique synaptic morphology of the CL and its excitatory and inhibitory
+connections with most cortical areas. Using serial visual search as an example, we describe how
+the functional anatomy of the claustral connections can potentially execute the sequential activation
+of the representations of objects that are being processed serially. We also propose that 
+cross-frequencycoupling (CFC) between low frequency signals from CL and higher frequency oscillations in
+the cortical areas will be an efficient means of CL modulating neural activity across multiple brain regions in synchrony.
+this model is applicable to the wide range of functions one performs, from simple object recognition to reading and writing,
+listening to or performing music, etc.
