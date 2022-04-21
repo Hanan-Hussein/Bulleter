@@ -21,23 +21,24 @@ def bulleter_function(lines: list) -> str:
     return newfile
 
 
-def exporter_clipboarder(txt_file: str, file_name: str) -> None:
+def exporter_clipboarder(txt_data: str, file_name: str) -> None:
     """
     Creates a file with the name  `file_name`
     Writes some text file into the created file.
     Copies the contents of the file onto a clipboard.
     
     Args:
-        txt_file (str): The file that has to be written
+        txt_data (str): The file that has to be written
         file_name (str): The name of the destination file to be written
     """
     with open(f'{file_name}.txt', 'w') as file_name:
-        print(txt_file, file=file_name)
-    pyperclip.copy(file_name)
+        print(txt_data, file=file_name)
+    pyperclip.copy(txt_data)
 
 
 # Test Case
 with open('text.txt', 'r') as text:
     lines = text.readlines()
-    new_file = bulleter_function(lines)
+    new_file = bulleter_function(lines) 
+    # data captitalized and *
     exporter_clipboarder(new_file, "beauty")
