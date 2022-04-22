@@ -1,16 +1,31 @@
 import unittest
-import bulleter
+import pyperclip
+from bulleter import exporter_clipboarder, bulleter_function
+
 
 class TestBulleter(unittest.TestCase):
     def test_clipboard(self):
-        bulleter.exporter_clipboarder("zzzzzzzzz",'testfile');
+        """
+        Tests the exporter_clipboarder function
+        tests creaio of a file and if it has the right documents
+        """
+        exporter_clipboarder("zzzzzzzzz", 'testfile')
+        with open('testfile.txt', 'w') as text:
+            print("zzzzzzzzz", file=text)
         with open('testfile.txt', 'r') as text:
-            self.assertEqual('zzzzzzzzz\n', text.read());
-            
+            new = text.read()
+            self.assertEqual('zzzzzzzzz\n', new)
+        copied = pyperclip.paste()
+        self.assertEqual('zzzzzzzzz', copied)
+
     def test_bulleter(self):
-        mylist = ["apple"];
-        result = bulleter.bulleter_function(mylist);
-        self.assertEqual(result,'*Apple \n');   
-        
-if __name__=="__main__":
+        """
+        Tests the bulleter functionality if the entered text is formatted correctly
+        """
+        mylist = ["apple"]
+        result = bulleter_function(mylist)
+        self.assertEqual(result, '*Apple \n')
+
+
+if __name__ == "__main__":
     unittest.main()
