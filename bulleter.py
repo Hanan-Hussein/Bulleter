@@ -16,7 +16,7 @@ def bulleter_function(lines: list) -> str:
     """
     newfile = ""
     for line in lines:
-        newfile += f"* {line.capitalize()} \n"
+        newfile += f"*{line.capitalize()} \n"
 
     return newfile
 
@@ -37,8 +37,9 @@ def exporter_clipboarder(txt_data: str, file_name: str) -> None:
 
 
 # Test Case
-with open('text.txt', 'r') as text:
-    lines = text.readlines()
-    new_file = bulleter_function(lines) 
-    # data captitalized and *
-    exporter_clipboarder(new_file, "beauty")
+if __name__=="__main__":
+    with open('text.txt', 'r') as text:
+        lines = text.readlines()
+        new_file = bulleter_function(lines) 
+        # data captitalized and *
+        exporter_clipboarder(new_file, "beauty")
