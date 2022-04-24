@@ -26,7 +26,7 @@ def exporter_clipboarder(txt_data: str, file_name: str) -> None:
     Creates a file with the name  `file_name`
     Writes some text file into the created file.
     Copies the contents of the file onto a clipboard.
-    
+
     Args:
         txt_data (str): The file that has to be written
         file_name (str): The name of the destination file to be written
@@ -37,9 +37,9 @@ def exporter_clipboarder(txt_data: str, file_name: str) -> None:
 
 
 # Test Case
-if __name__=="__main__":
+if __name__ == "__main__":
     with open('text.txt', 'r') as text:
         lines = text.readlines()
-        new_file = bulleter_function(lines) 
+        new_file = bulleter_function(lines)
         # data captitalized and *
         exporter_clipboarder(new_file, "beauty")
